@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+.border-background {
+  border-image: linear-gradient(to right, #ffffff, #185f9a);
+  border-radius: 50%;
+  border-image-slice: 1;
+  /* border: 1px solid ; */
+  border-radius: 10px;
+  /* border-image: linear-gradient(to #185f9a #ffffff00 ); */
+
+  /* inear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) */
+  border-left: none;
+}
+
+.border-background-left {
+  border-image: linear-gradient(to left, #ffffff, #185f9a);
+  border-radius: 50%;
+  border-image-slice: 1;
+  /* border: 1px solid ; */
+  border-radius: 10px;
+  /* border-image: linear-gradient(to #185f9a #ffffff00 ); */
+
+  /* inear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) */
+  border-right: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 10px);
+  right: auto;
+  background-color: #00a88e;
+  border-radius: 50%;
+  padding: 20px;
+  --swiper-navigation-size: 15px;
+  color: #ffffff !important;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #0072bc, #009fa9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.basic-text {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.hero-text {
+  background-image: linear-gradient(to left, #369f99, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mod-text {
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos-slide {
+  animation: 5s slide infinite linear;
+}
+
+.logos-slide :hover {
+  animation-play-state: paused;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  /* background-color: red; */
+  top: 100%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.relative:hover .dropdown-menu,
+.relative:hover .relative .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow-sign {
+  visibility: hidden;
+}
+
+.arrow-sign:hover {
+  visibility: visible;
+}
+/* .dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+} */
+
+/* .dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+} */
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.text-des {
+  font-size: 1.125rem;
+  line-height: 26px;
+}
