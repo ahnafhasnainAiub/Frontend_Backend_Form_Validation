@@ -1,0 +1,2 @@
+Zod validation -- Signup and Login form.
+Mongoose Validation -- Employee, Client, Project form.
